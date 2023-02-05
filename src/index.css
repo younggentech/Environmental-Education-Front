@@ -8,6 +8,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+  /*  monospace;*/
+  font-family: 'Inter', sans-serif;
+}
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
