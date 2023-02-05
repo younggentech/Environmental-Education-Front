@@ -34,7 +34,7 @@ function Header() {
                     <nav>
                         <HStack spacing={8}>
                             <Link>About</Link>
-                            <Link>Projects</Link>
+                            <Link>Blog</Link>
                             <Link>Contact</Link>
                         </HStack>
                     </nav>

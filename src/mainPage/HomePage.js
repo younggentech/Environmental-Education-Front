@@ -1,8 +1,11 @@
 import Header from "./Header";
 import MainBanner from "./MainBanner";
-import {Box, HStack, SimpleGrid, Stack} from "@chakra-ui/react";
+import {Box, Divider, Heading, HStack, SimpleGrid, Stack} from "@chakra-ui/react";
 import InfoSection from "./InfoSection";
 import CardInfoSection from "./CardInfoSection";
+import OurMissionBanner from "./OurMissionBanner";
+import Footer from "./Footer";
+
 
 function HomePage() {
     return (
@@ -11,6 +14,7 @@ function HomePage() {
                 <Header/>
                 <MainBanner/>
             </Box>
+            <Heading margin={'4vh'}>What are we fighting with?</Heading>
             <SimpleGrid minChildWidth='sm' spacing={"2vw"} marginBottom={"5wh"} paddingBottom={"5vh"}>
                 <CardInfoSection text={"Human activities have made global warming and climate change a global threat. The rising levels of CO2 and other greenhouse gases have caused an increase in average global temperatures, extreme weather events, rising sea levels and other negative changes. These changes are directly and indirectly affecting all life forms."}
                                  heading={"Global Warming and Climate Change"}
@@ -22,7 +26,11 @@ function HomePage() {
                                  heading={"Loss of Biodiversity"}
                                  img={"/bio.jpg"}/>
             </SimpleGrid>
-
+            <Box backgroundColor={"#E8F2F0"}>
+                <OurMissionBanner/>
+                <Divider/>
+                <Footer/>
+            </Box>
         </Box>
 
 
