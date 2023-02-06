@@ -35,25 +35,26 @@ function OurMissionBanner() {
     return (
         <Box paddingBottom={"7vh"}>
             <HStack
-                px={32}
-                py={4}
+                px={"6vw"}
+                py={"4vh"}
             >
                 <VStack textAlign={"left"}
                         alignItems={'left'}
-                        spacing={4}
+                        spacing={"4vh"}
                 >
                     <Heading
                         color={"black"}
-                        size={"2xl"}
+                        // size={"2xl"}
                         lineHeight={"10vh"}
+                        size={['md', '2xl', '3xl', '4xl']}
                     >
                         <Highlight
                             query={'Educate'}
-                            styles={{ px: '1', py: '1', rounded: 'full', bg: 'green.100' }}>
+                            styles={{ px: '1', my: '1', rounded: 'full', bg: 'green.100' }}>
                             Our Mission to Educate
                         </Highlight>
                     </Heading>
-                    <Text>
+                    <Text fontSize={['xs', 'sm', 'lg', 'xl']}>
                         Throughout our history we were focused on helping children to understand and interact with the environment.
                         This text will be updated. Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer gravida vitae ultrices urna et porttitor malesuada. Hendrerit diam netus.
                     </Text>

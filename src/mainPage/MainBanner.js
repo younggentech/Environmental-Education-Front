@@ -1,4 +1,16 @@
-import {Box, Button, Heading, Highlight, HStack, Link, Text, VStack} from "@chakra-ui/react";
+import {
+    Box,
+    Button,
+    ButtonGroup,
+    Heading,
+    Highlight,
+    HStack,
+    Link,
+    SimpleGrid,
+    Stack,
+    Text,
+    VStack
+} from "@chakra-ui/react";
 import { MdOutlinePlayArrow } from 'react-icons/md'
 
 function MainBanner() {
@@ -7,39 +19,42 @@ function MainBanner() {
             paddingBottom={"7vh"}
             marginBottom={"5vh"}>
                 <HStack
-                    px={32}
-                    py={4}
+                    px={"6vw"}
+                    py={"4vh"}
                     // justifyContent="space-between"
                     >
                     <VStack textAlign={"left"}
                             alignItems={'left'}
-                            spacing={4}
+                            spacing={"4vh"}
                             >
                         <Heading
                             color={"white"}
                             // textAlign={"left"}
-                            size={"2xl"}
-                            lineHeight={"10vh"}
+                            size={['md', '2xl', '3xl', '3xl']}
+                            // fontSize={['sm', 'md', 'lg', 'xl']}
+                            // lineHeight={"100"}
+
                         >
                                 <Highlight
                                 query={'Sustainability'}
-                                styles={{ px: '1', py: '1', rounded: 'full', bg: 'teal.100' }}>
+                                styles={{ px: "2", my: "1", rounded: 'full', bg: 'teal.100' }}>
                                     Environmental Education for Sustainability
                                 </Highlight>
                         </Heading>
                         <Text
-                        color={"whitesmoke"}>
+                        color={"whitesmoke"} fontSize={['xs', 'sm', 'lg', 'xl']}>
                             We educate kids how to interact with environment carefully.
                             The most active kids will get <Link color='green.500'>gifts and souvenirs</Link>.
                         </Text>
-                        <HStack spacing={5}>
-                            <Button colorScheme='green' size='md'>
+                        <Stack direction={['column', 'row']} spacing={5}>
+                            <Button colorScheme='green' size={['sm', 'sm', 'md', 'md']}>
                                 Start now
                             </Button>
-                            <Button leftIcon={<MdOutlinePlayArrow />} colorScheme='green' variant='outline'>
+                            <Button leftIcon={<MdOutlinePlayArrow />} colorScheme='green'
+                                    variant='outline' size={['sm', 'sm', 'md', 'md']}>
                                 What is Environmental Education?
                             </Button>
-                        </HStack>
+                        </Stack>
                     </VStack>
                 </HStack>
         </Box>

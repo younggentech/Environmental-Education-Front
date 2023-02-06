@@ -7,14 +7,14 @@ import {
     Divider,
     Heading,
     HStack,
-    Image,
+    Image, SimpleGrid,
     Stack,
     Text
 } from "@chakra-ui/react";
 
 function CardInfoSection(props) {
     return (
-        <Card maxW='sm' align='center'>
+        <Card maxW={['xs', 'sm', 'lg', 'xl']} align='center'>
             <CardBody>
                 <Image
                     src={props.img}
@@ -22,22 +22,22 @@ function CardInfoSection(props) {
                     borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
-                    <Heading size='md'>{props.heading}</Heading>
-                    <Text>
+                    <Heading size={['md', 'lg', 'lg', 'xl']}>{props.heading}</Heading>
+                    <Text fontSize={['xs', 'sm', 'lg', 'xl']}>
                         {props.text}
                     </Text>
                 </Stack>
             </CardBody>
             <Divider/>
             <CardFooter  justify='space-between'>
-                <ButtonGroup spacing={2}>
+                <SimpleGrid spacing={2}>
                     <Button variant='solid' colorScheme='green'>
                         Start learning
                     </Button>
                     <Button variant={"outline"} colorScheme={'green'}>
                         Participate
                     </Button>
-                </ButtonGroup>
+                </SimpleGrid>
             </CardFooter>
         </Card>
     )
