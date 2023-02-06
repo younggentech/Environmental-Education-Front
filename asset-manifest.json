@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Environmental-Education-Front/static/css/main.3c127e2f.css",
-    "main.js": "/Environmental-Education-Front/static/js/main.d7ce60db.js",
+    "main.js": "/Environmental-Education-Front/static/js/main.a669ce20.js",
     "static/js/787.baca1701.chunk.js": "/Environmental-Education-Front/static/js/787.baca1701.chunk.js",
     "index.html": "/Environmental-Education-Front/index.html",
     "main.3c127e2f.css.map": "/Environmental-Education-Front/static/css/main.3c127e2f.css.map",
-    "main.d7ce60db.js.map": "/Environmental-Education-Front/static/js/main.d7ce60db.js.map",
+    "main.a669ce20.js.map": "/Environmental-Education-Front/static/js/main.a669ce20.js.map",
     "787.baca1701.chunk.js.map": "/Environmental-Education-Front/static/js/787.baca1701.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c127e2f.css",
-    "static/js/main.d7ce60db.js"
+    "static/js/main.a669ce20.js"
   ]
 }
