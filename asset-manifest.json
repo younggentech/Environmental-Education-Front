@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Environmental-Education-Front/static/css/main.3c127e2f.css",
-    "main.js": "/Environmental-Education-Front/static/js/main.43a4a890.js",
-    "static/js/787.baca1701.chunk.js": "/Environmental-Education-Front/static/js/787.baca1701.chunk.js",
-    "index.html": "/Environmental-Education-Front/index.html",
-    "main.3c127e2f.css.map": "/Environmental-Education-Front/static/css/main.3c127e2f.css.map",
-    "main.43a4a890.js.map": "/Environmental-Education-Front/static/js/main.43a4a890.js.map",
-    "787.baca1701.chunk.js.map": "/Environmental-Education-Front/static/js/787.baca1701.chunk.js.map"
+    "main.css": "/static/css/main.3c127e2f.css",
+    "main.js": "/static/js/main.05308ccf.js",
+    "static/js/787.baca1701.chunk.js": "/static/js/787.baca1701.chunk.js",
+    "index.html": "/index.html",
+    "main.3c127e2f.css.map": "/static/css/main.3c127e2f.css.map",
+    "main.05308ccf.js.map": "/static/js/main.05308ccf.js.map",
+    "787.baca1701.chunk.js.map": "/static/js/787.baca1701.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c127e2f.css",
-    "static/js/main.43a4a890.js"
+    "static/js/main.05308ccf.js"
   ]
 }
