@@ -55,7 +55,7 @@ function OurMissionBanner() {
                         </Highlight>
                     </Heading>
                     <Text fontSize={['xs', 'sm', 'lg', 'xl']}>
-                        Throughout our history we were focused on helping children to understand and interact with the environment.
+                        Our Mission to Educate is ... Throughout our history we were focused on helping children to understand and interact with the environment.
                         This text will be updated. Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer gravida vitae ultrices urna et porttitor malesuada. Hendrerit diam netus.
                     </Text>
                 </VStack>

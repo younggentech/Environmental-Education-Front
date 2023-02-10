@@ -3,8 +3,12 @@ import {
     Button,
     HStack, Image, Link,
 } from "@chakra-ui/react";
+import { useKeycloak } from "@react-keycloak/web";
+
 
 function Header() {
+    const { keycloak, initialized } = useKeycloak();
+
     return (
         <Box
             // position="fixed"
@@ -38,16 +42,28 @@ function Header() {
                     </nav>
                     <nav>
                         <HStack spacing={'4vw'}>
-                            <Link fontSize={['xs', 'sm', 'lg', 'xl']}>About</Link>
+                            <Link fontSize={['xs', 'sm', 'lg', 'xl']} href="/secured">About</Link>
                             <Link fontSize={['xs', 'sm', 'lg', 'xl']}>Blog</Link>
                             <Link fontSize={['xs', 'sm', 'lg', 'xl']}>Contact</Link>
                         </HStack>
                     </nav>
                     <nav>
                         <HStack spacing={"2vw"}>
-                            <Button colorScheme='green' size={['sm', 'sm', 'lg', 'md']}>
-                                Login
-                            </Button>
+                            {!keycloak.authenticated && (
+                                <Button colorScheme='green' size={['sm', 'sm', 'lg', 'md']} onClick={() => keycloak.login()}>
+                                    Login
+                                </Button>
+                            )}
+
+                            {!!keycloak.authenticated && (
+                                <button
+                                    type="button"
+                                    className="text-blue-800"
+                                    onClick={() => keycloak.logout()}
+                                >
+                                    Logout ({keycloak.tokenParsed.preferred_username})
+                                </button>
+                            )}
                         </HStack>
                     </nav>
                 </HStack>
